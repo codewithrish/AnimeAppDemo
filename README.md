@@ -68,7 +68,7 @@ This project demonstrates a clean UI, smooth navigation, and local caching, focu
 ## Getting Started
 
 - Clone the repo
-- Set up your Android Studio with minimum SDK 24+
+- Set up your Android Studio with minimum SDK 26+
 - Enable internet permissions in `AndroidManifest.xml`
 - Build and run on emulator/device with internet
 
