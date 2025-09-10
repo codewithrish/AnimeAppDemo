@@ -8,7 +8,7 @@ This project demonstrates a clean UI, smooth navigation, and local caching, focu
 ## Assumptions Made
 
 - Jikan API will provide anime data, including images, title, episodes, ratings, and trailer URLs.
-- Trailer URLs from Jikan are generally YouTube links, played using WebView with an HTML embed for compatibility.
+- Trailer URLs from Jikan are generally YouTube links, played using YouTubePlayerView for compatibility.
 - User runs the app on a device/emulator with working internet access and basic system bar support.
 - The database exists for Room persistence but the app can fallback to network when Room DB is empty.
 - Only popular/top anime and their basic details are shown (no authentication, no review system, no advanced filtering).
@@ -25,7 +25,7 @@ This project demonstrates a clean UI, smooth navigation, and local caching, focu
 
 - **Anime Detail Screen**:
     - Shows high-resolution poster/trailer video, anime details, genre chips, synopsis.
-    - Trailer playback using WebView HTML embed for YouTube.
+    - Trailer playback using YouTubePlayerView for YouTube.
     - Smooth scroll and clean typography for readability.
     - Back and retry buttons for easy navigation and error recovery.
 
@@ -49,7 +49,7 @@ This project demonstrates a clean UI, smooth navigation, and local caching, focu
 
 ## Known Limitations
 
-- **Trailer Playback**: Only supports trailers via YouTube or embeddable sites; direct MP4 or .m3u8 streams are not handled natively.
+- **Trailer Playback**: Only supports trailers via YouTube.
 - **Genres**: Displayed as flat strings; advanced genre exploration/search is not implemented.
 - **Offline Mode**: Room caching is present, but initial load requires network.
 - **Error Feedback**: Network/server errors are shown, but no deep retry logic or long-term recovery.
@@ -69,7 +69,6 @@ This project demonstrates a clean UI, smooth navigation, and local caching, focu
 
 - Clone the repo
 - Set up your Android Studio with minimum SDK 26+
-- Enable internet permissions in `AndroidManifest.xml`
 - Build and run on emulator/device with internet
 
 ---
